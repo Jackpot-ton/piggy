@@ -1,2 +1,2 @@
 # Piggy
-Smart Contracts for "Piggy" mode
+Smart Contracts for "Piggy" mode.
