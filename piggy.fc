@@ -53,13 +53,13 @@
     if(op == 777) { ;; Feed piggy
 
         int piggy_balance = my_balance - msg_value;
-        int balance_eleven_percents = (piggy_balance / 100) * 11;
-        throw_unless(69, balance_eleven_percents > msg_value); ;; 11% > msg_value
+        int balance_twelve_percents = (piggy_balance / 100) * 12;
+        throw_unless(69, balance_twelve_percents > msg_value); ;; 12% > msg_value
 
         randomize_lt();
 
         int random_number = rand(piggy_balance) + 1;
-        int cutted_msg_value = (msg_value / 100) * 90; ;; 10% cut 
+        int cutted_msg_value = (msg_value / 100) * 80; ;; 20% cut 
 
         if(random_number <= cutted_msg_value) { ;; win
             int balance_percent = piggy_balance / 100;
